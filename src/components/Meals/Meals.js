@@ -1,3 +1,5 @@
+/** Component is showing rendering the MealsSummary and AvailableMeals*/
+
 import { Fragment } from 'react';
 
 import MealsSummary from './MealsSummary';

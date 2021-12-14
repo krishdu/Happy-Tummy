@@ -1,3 +1,5 @@
+/** Component is reponsible for showing all the meal list */
+
 import classes from './AvailableMeals.module.css';
 import MealItem from './MealItem/MealItem';
 import Card from '../UI/Card';

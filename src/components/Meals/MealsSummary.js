@@ -1,3 +1,5 @@
+/** Responsible for displayiny the catchy heading */
+
 import classes from './MealsSummary.module.css';
 
 

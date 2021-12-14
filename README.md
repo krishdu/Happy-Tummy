@@ -1,4 +1,5 @@
-# Happy Tummy - A Food Order Application Using React (free and open-source front-end JavaScript library)
+# Happy Tummy - A Food Order Application Using ReactJs
+
 > It's is a food ordering browser application built using ReactJs. This was created while I was learning React.
 
 ```
@@ -23,9 +24,20 @@ Phase 1 : Identify and Create a basic Components
 ```
 Phase 2 : Render a Dummy List of Item 
 ```
-+ Create a seperate component for each Item (Meal)
++ Create a separate component for each Item (Meal)
 + Create a component to group all available Item 
 + Create a Parent component to hold both the component
+
+```
+Phase 3 : Adding a form component to select Items
+```
++ Created a separate MealItemForm component
++ Included a number Input box component as a child of Form Component.
+
+```
+Phase 4 : Adding a Modal to show Cart details
+```
++ 
 
 ## Available Scripts
 
