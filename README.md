@@ -37,7 +37,10 @@ Phase 3 : Adding a form component to select Items
 ```
 Phase 4 : Adding a Modal to show Cart details
 ```
-+ 
++ Created a Cart component with dummy cart data.
++ created a Modal component to wrap the Cart Component.
++ Modal component consist of Backdrop and ModalOverlay which is implemented by using reactPortal
++ through props chaning implemented the Modal open & close functionality
 
 ## Available Scripts
 
