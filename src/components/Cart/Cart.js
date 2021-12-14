@@ -1,3 +1,5 @@
+/* responsible for showing cart details using Modal */
+
 import Modal from '../UI/Modal/Modal';
 import classes from './Cart.module.css';
 
