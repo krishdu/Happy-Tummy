@@ -12,6 +12,12 @@ Features Need to Develop (MVP)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
++ ### Learnings:
+    + Property (props) chaning
+    + wrap children with custom component
+    + How to manage state using React context
+    + use of state hook 'useReducer()'
+    + how to use 'useRef()' to get a element referance. And also learn the use of fowardRef in React library.
 ## ✨ My Thought Process ✨
 
 ```
@@ -41,6 +47,13 @@ Phase 4 : Adding a Modal to show Cart details
 + created a Modal component to wrap the Cart Component.
 + Modal component consist of Backdrop and ModalOverlay which is implemented by using reactPortal
 + through props chaning implemented the Modal open & close functionality
+
+```
+Phase - 5 : Adding Items to the cart dynamically
+```
++ Created a Cart context including a Cart Provider to hold the Cart state globally
++ In cart Context I created a Items array
+    + checking items id (makes Item unique) it will add Items to Cart
 
 ## Available Scripts
 
