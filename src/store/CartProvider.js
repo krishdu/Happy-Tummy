@@ -1,7 +1,6 @@
 /**use CartProvider component to get acess to the cart items states */
 
 import { useReducer } from "react";
-import MealItemForm from "../components/Meals/MealItem/MealItemForm/MealItemForm";
 import CartContext from "./cart-context";
 
 const defaultCartState = {
@@ -25,6 +24,7 @@ const cartReducer = (state, action) => {
                ...existingCartItem,
                amount: existingCartItem.amount + action.item.amount
            };
+           
            updatedItems = [...state.items];
            updatedItems[existingCartItemIndex] = updatedItem;
         }else{
@@ -36,6 +36,28 @@ const cartReducer = (state, action) => {
             totalAmount: newTotalAmount
         };
     }
+
+     if(action.type === 'REMOVE'){
+
+         const existingCartItemIndex = state.items.findIndex(
+            item => item.id == action.id
+        );
+        const existingItem = state.items[existingCartItemIndex];
+        const updatedTotalAmount = state.totalAmount - existingItem.price;
+        let updatedItems;
+        if(existingItem.amount === 1){
+            updatedItems = state.items.filter(item => item.id != action.id);
+        }else{
+            const updatedItem = {...existingItem, amount: existingItem.amount - 1};
+            updatedItems = [...state.items];
+            updatedItems[existingCartItemIndex] = updatedItem;
+        }
+
+        return {
+            items: updatedItems,
+            totalAmount: updatedTotalAmount
+        }
+     }
 
     return defaultCartState;
 };

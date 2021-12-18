@@ -53,7 +53,14 @@ Phase - 5 : Adding Items to the cart dynamically
 ```
 + Created a Cart context including a Cart Provider to hold the Cart state globally
 + In cart Context I created a Items array
-    + checking items id (makes Item unique) it will add Items to Cart
+    + by checking items id (makes Item unique), add function handler will add Items to Cart
+
+
+```
+Phase - 6 : Working to make Cart Add and Delete button actionable
+```
++ bind the item and item id with each Handler
++ using cartContext and with some array handling logic it's done
 
 ## Available Scripts
 
