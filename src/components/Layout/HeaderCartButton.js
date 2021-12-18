@@ -1,18 +1,40 @@
 /** Component is showing Your Cart section on top of Header */
 
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CartContext from '../../store/cart-context';
 import CartIcon from '../Cart/CartIcon';
 import classes from './HeaderCartButton.module.css';
 
 const HeaderCartButton = props => {
-    const cartCtx = useContext(CartContext);
+    const [IsBtnHighlighted, SetIsBtnHighlighted] = useState(false);
 
-    const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
+    const cartCtx = useContext(CartContext);
+    const { items } = cartCtx;
+
+    const numberOfCartItems = items.reduce((curNumber, item) => {
         return curNumber + item.amount;
     }, 0)
 
-    return <button className={classes.button} onClick={props.onClick} >
+    const btnClasses = `${classes.button} ${IsBtnHighlighted ? classes.bump : ''}`
+
+    useEffect(() =>{
+        if(items.length == 0){
+            return;
+        }
+        SetIsBtnHighlighted(true);
+
+         const timer = setTimeout(() => {
+            SetIsBtnHighlighted(false);
+         }, 300)
+
+        // this fun will act as a garbage collector and clean the timer
+        return () => {
+            clearTimeout(timer);
+        };
+
+    }, [items])
+
+    return <button className={btnClasses} onClick={props.onClick} >
         <span className={classes.icon}>
             <CartIcon />
         </span>

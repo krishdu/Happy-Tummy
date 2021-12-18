@@ -17,7 +17,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     + wrap children with custom component
     + How to manage state using React context
     + use of state hook 'useReducer()'
-    + how to use 'useRef()' to get a element referance. And also learn the use of fowardRef in React library.
+    + How to use 'useRef()' to get a element referance. And also learn the use of fowardRef in React library.
+    + How to use useEffect
 ## ✨ My Thought Process ✨
 
 ```
