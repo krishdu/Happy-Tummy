@@ -72,6 +72,17 @@ Phase - 7 : Moving "Meals" Data To The Backend (Firebase)
 + use 'fetch' method to call the api, which will return a promise. 
 + Once we get the meals data, set it to meals state using useState hook.
 
+```
+Phase - 8: Added a checkout Form
+```
++ Created a Checkout component with will visible when user click order button. Handled by state hook.
++ take the form data through useRef and did some basic validation
+
+```
+Phase - 9: send data to backend (firebase realtime database for simplicity)
+```
++ 
+
 ## Available Scripts
 
 In the project directory, you can run:
