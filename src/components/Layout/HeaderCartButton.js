@@ -6,7 +6,7 @@ import CartIcon from '../Cart/CartIcon';
 import classes from './HeaderCartButton.module.css';
 
 const HeaderCartButton = props => {
-    const [IsBtnHighlighted, SetIsBtnHighlighted] = useState(false);
+    const [isBtnHighlighted, setIsBtnHighlighted] = useState(false);
 
     const cartCtx = useContext(CartContext);
     const { items } = cartCtx;
@@ -15,16 +15,16 @@ const HeaderCartButton = props => {
         return curNumber + item.amount;
     }, 0)
 
-    const btnClasses = `${classes.button} ${IsBtnHighlighted ? classes.bump : ''}`
+    const btnClasses = `${classes.button} ${isBtnHighlighted ? classes.bump : ''}`
 
     useEffect(() =>{
         if(items.length == 0){
             return;
         }
-        SetIsBtnHighlighted(true);
+        setIsBtnHighlighted(true);
 
          const timer = setTimeout(() => {
-            SetIsBtnHighlighted(false);
+            setIsBtnHighlighted(false);
          }, 300)
 
         // this fun will act as a garbage collector and clean the timer

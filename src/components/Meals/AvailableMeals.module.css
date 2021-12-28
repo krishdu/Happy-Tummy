@@ -7,7 +7,7 @@
 
 .mealsLoading {
   text-align: center;
-  color: white;
+  color: rgb(12, 12, 12);
 }
 
 .mealsError {

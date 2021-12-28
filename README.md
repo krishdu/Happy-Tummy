@@ -19,6 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     + use of state hook 'useReducer()'
     + How to use 'useRef()' to get a element referance. And also learn the use of fowardRef in React library.
     + How to use useEffect
+    + How to make a Http request.
 ## ✨ My Thought Process ✨
 
 ```
@@ -62,6 +63,14 @@ Phase - 6 : Working to make Cart Add and Delete button actionable
 ```
 + bind the item and item id with each Handler
 + using cartContext and with some array handling logic it's done
+
+
+```
+Phase - 7 : Moving "Meals" Data To The Backend (Firebase)
+```
++ Created a realtime database.
++ use 'fetch' method to call the api, which will return a promise. 
++ Once we get the meals data, set it to meals state using useState hook.
 
 ## Available Scripts
 
