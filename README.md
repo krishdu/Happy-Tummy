@@ -81,7 +81,9 @@ Phase - 8: Added a checkout Form
 ```
 Phase - 9: send data to backend (firebase realtime database for simplicity)
 ```
-+ 
++ Capture the user address details
++ from cart context get the order details
++ Show the success message by handling state and  using HTTP POST method send the data to backend.
 
 ## Available Scripts
 
