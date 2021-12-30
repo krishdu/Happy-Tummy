@@ -31,7 +31,7 @@ const Cart = (props) => {
 
     const submitOrderHandler = async (userData) => {
         setIsSubmitting(true);
-        await fetch('https://happy-tummy-15dbf-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json',{
+        await fetch(process.env.REACT_APP_ORDER_URL,{
             method: 'POST',
             body: JSON.stringify({
                 user: userData,

@@ -12,12 +12,12 @@ const AvailableMeals = () => {
 
     useEffect(() => { 
       const fetchMeals = async () => {
-        const response = await fetch('https://happy-tummy-15dbf-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json');
-
+        const response = await fetch(process.env.REACT_APP_MEALS_URL);
+        
         if(!response.ok){
           throw new Error('Something went wrong!');
         }
-
+        
         const responseData = await response.json();
 
         const loadedMeals = [];
