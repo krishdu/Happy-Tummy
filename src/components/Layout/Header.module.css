@@ -19,11 +19,12 @@
   height: 25rem;
   z-index: 0;
   overflow: hidden;
+  border-bottom-right-radius: 100% 75%;
+  border-bottom-left-radius: 100% 75%;
 }
 
 .main-image img {
   width: 110%;
   height: 100%;
   object-fit: cover;
-  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
 }

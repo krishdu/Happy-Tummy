@@ -12,6 +12,9 @@ Features Need to Develop (MVP)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+| [Live Application (👆)](https://krish-you-pen.herokuapp.com/) |
+| ------ |  
+
 + ### Learnings:
     + Property (props) chaning
     + wrap children with custom component
@@ -84,6 +87,11 @@ Phase - 9: send data to backend (firebase realtime database for simplicity)
 + Capture the user address details
 + from cart context get the order details
 + Show the success message by handling state and  using HTTP POST method send the data to backend.
+
+
+<p align="center">
+<img alt="GIF" src="https://github.com/krishdu/Happy-Tummy/blob/master/happy-tummy-v1.gif?raw=true" width="800" height="400"/>
+</p>
 
 ## Available Scripts
 
