@@ -5,14 +5,12 @@ import classes from './MealsSummary.module.css';
 
 const MealsSummary = () => {
     return <section className={classes.summary}>
-    <h2>Delicious Food, Delivered To You</h2>
+    <h2>A Moments of Delivered on Time</h2>
     <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
+       “Ate, eating, going to eat” that's what you must care about.
     </p>
     <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
+       A hungry must not go to food the food will go to hungry.
     </p>
     </section>
 };

@@ -11,12 +11,12 @@
 }
 
 .description {
-  font-style: italic;
+  font-family: cursive;
 }
 
 .price {
   margin-top: 0.25rem;
   font-weight: bold;
-  color: #ad5502;
+  color: #85b4af;
   font-size: 1.25rem;
 }
