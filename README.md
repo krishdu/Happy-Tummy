@@ -12,7 +12,7 @@ Features Need to Develop (MVP)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-| [Live Application (👆)](https://krish-you-pen.herokuapp.com/) |
+| [Live Application (👆)](https://krish-happy-tummy-1e3785.netlify.app/) |
 | ------ |  
 
 + ### Learnings:
